@@ -1,0 +1,7 @@
+COMMAND: r.to.vect -v input="elev.basins@user1" output="basins_areas" type="area" column="value"
+GISDBASE: C:\Users\Mayuri Pandey\Documents\grassdata
+LOCATION: nc_spm_08_grass7 MAPSET: user1 USER: Mayuri Pandey DATE: Sat Dec 12 20:34:18 2020
+---------------------------------------------------------------------------------
+COMMAND: v.db.addcolumn.py map=basins_areas 'columns=elev_number DOUBLE PRECISION,elev_null_cells DOUBLE PRECISION,elev_minimum DOUBLE PRECISION,elev_maximum DOUBLE PRECISION,elev_range DOUBLE PRECISION,elev_average DOUBLE PRECISION,elev_stddev DOUBLE PRECISION,elev_variance DOUBLE PRECISION,elev_coeff_var DOUBLE PRECISION,elev_sum DOUBLE PRECISION,elev_first_quartile DOUBLE PRECISION,elev_median DOUBLE PRECISION,elev_third_quartile DOUBLE PRECISION,elev_percentile_90 DOUBLE PRECISION' layer=1
+GISDBASE: C:\Users\Mayuri Pandey\Documents\grassdata
+LOCATION: nc_spm_08_grass7 MAPSET: user1 USER: Mayuri Pandey DATE: Sat Dec 12 20:38:22 2020
